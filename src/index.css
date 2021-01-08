@@ -5,7 +5,7 @@
 html, body{
   margin: 0;
   padding: 0px;
-  background: #fffbd5;  /* fallback for old browsers */
+  background: #474743;  /* fallback for old browsers */
   padding-top: 5px;
   box-sizing: border-box;
   
@@ -15,16 +15,24 @@ html, body{
   padding:50px;
 }
 .titulo{
+  
   text-align: center;
-  font-size:40px;
+  font-size:45px;
+  color: rgb(224, 205, 205);
+  font-family: 'Broadway';
   text-shadow: 0 0 7px rgb(29, 44, 243);
 }
 
+h3{
+  color: rgb(93, 192, 179);
+  font-family: 'Ravie';
+}
+
 input {
-  background-color: #91e0cc;
-  border: 3px solid #e0f924;
+  background-color: #d2e4df;
+  border: 3px solid #131eb8;
   border-radius: 3px;
-  color: #f55308;
+  color: #963e16;
   font-size: 1.2rem;
   padding: 10px;
   width: 98%;
@@ -93,7 +101,10 @@ ol{
 @media (max-width: 600px){
   
   input{
-    width:96%;
+    width:94%;
   
+  }
+  .titulo{
+    margin-left: 6px;
   }
 }
