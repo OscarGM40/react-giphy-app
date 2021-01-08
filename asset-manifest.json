@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-giphy-app/static/css/main.d1e38cd5.chunk.css",
+    "main.js": "/react-giphy-app/static/js/main.0771142a.chunk.js",
+    "main.js.map": "/react-giphy-app/static/js/main.0771142a.chunk.js.map",
+    "runtime-main.js": "/react-giphy-app/static/js/runtime-main.4a8b0eea.js",
+    "runtime-main.js.map": "/react-giphy-app/static/js/runtime-main.4a8b0eea.js.map",
+    "static/js/2.c35352ea.chunk.js": "/react-giphy-app/static/js/2.c35352ea.chunk.js",
+    "static/js/2.c35352ea.chunk.js.map": "/react-giphy-app/static/js/2.c35352ea.chunk.js.map",
+    "index.html": "/react-giphy-app/index.html",
+    "static/css/main.d1e38cd5.chunk.css.map": "/react-giphy-app/static/css/main.d1e38cd5.chunk.css.map",
+    "static/js/2.c35352ea.chunk.js.LICENSE.txt": "/react-giphy-app/static/js/2.c35352ea.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4a8b0eea.js",
+    "static/js/2.c35352ea.chunk.js",
+    "static/css/main.d1e38cd5.chunk.css",
+    "static/js/main.0771142a.chunk.js"
+  ]
+}
