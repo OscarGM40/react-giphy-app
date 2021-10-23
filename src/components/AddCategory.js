@@ -1,22 +1,15 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import Swal from "sweetalert2";
 
 const AddCategory = ({ setCategories }) => {
   const [inputValue, setInputValue] = useState("");
 
   const handleInputChange = (e) => {
-    //console.log(e.target.value)
     setInputValue(e.target.value);
+    //console.log("HandleInputChange llamado")
   };
 
-  /**
-   * Validador antes de agregar un nuevo elemento en el array de categorias
-   *
-   * @param {Array} oldArray - Son todos los valores anteriores que estaban en el array
-   * @param { String } category - Es el nuevo valor a agregar como categoria
-   * @return { Array }  Nuevo array con la categoria
-   */
   const handleSetCategory = (oldArray, category) => {
     if (!category) {
       Swal.fire({
@@ -42,6 +35,7 @@ const AddCategory = ({ setCategories }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    //console.log("handlesubmit")
 
     /*   if(inputValue.trim().length > 2){
      setCategories((cat) => [...cat,inputValue])
@@ -52,14 +46,16 @@ const AddCategory = ({ setCategories }) => {
   };
   return (
     <form onSubmit={handleSubmit}>
+      {/* <p>{inputValue}</p> */}
       <input type="text" value={inputValue} onChange={handleInputChange} 
       placeholder="Buscar gifs..."/>
     </form>
   );
 };
 
+// recuerda que el primer propTypes es camelCase
 AddCategory.propTypes = {
   setCategories: PropTypes.func.isRequired,
-};
+}
 
 export default AddCategory;

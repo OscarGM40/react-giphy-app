@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import AddCategory from "./components/AddCategory";
 import GifGrid from "./components/GifGrid";
 
-const GifExpertApp = () => {
-  const [categories, setCategories] = useState(["One Punch"]);
+const GifExpertApp = ( { defaultCategories= ["Dragon Ball"] } ) => {
+  const [categories, setCategories] = useState(defaultCategories);
 
   /* const handleAdd = () => {
    //Forma Uno: directamente lo asignamos
@@ -18,13 +18,10 @@ const GifExpertApp = () => {
       <h1 className="titulo">Gif Expert App</h1>
       <AddCategory setCategories={setCategories} />
       <hr />
-
       <ol>
-        {
-            categories.map((category) => (
-               <GifGrid key={category}  category={category} />
-        ))
-        }
+        {categories.map((category) => (
+          <GifGrid key={category} category={category} />
+        ))}
       </ol>
     </>
   );

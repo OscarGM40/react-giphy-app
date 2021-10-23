@@ -12,22 +12,25 @@ html, body{
 }
 
 :root{
-  padding:50px;
+  padding:10px 40px;
 }
 .titulo{
-  
   text-align: center;
   font-size:45px;
-  color: rgb(224, 205, 205);
+  color: rgb(168, 197, 206);
   font-family: 'Broadway';
   text-shadow: 0 0 7px rgb(29, 44, 243);
 }
 
-h3{
+h3 {
   color: rgb(93, 192, 179);
   font-family: 'Ravie';
 }
 
+p {
+  color:#181615;
+  font-family: 'Ravie';
+}
 input {
   background-color: #d2e4df;
   border: 3px solid #131eb8;
@@ -45,19 +48,15 @@ input::placeholder{
   color: #181615;
 }
 
-/* .card-grid {
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-} */
 
 .card-grid{
   display:grid;
   grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
   gap: 5px 5px;
-  
-  
-
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  align-items: center;
 }
 
 ol{
@@ -85,7 +84,6 @@ ol{
 }
 
 .card img {
- 
     max-height: 170px;
     max-width: 100%;
     margin: auto;
@@ -95,11 +93,13 @@ ol{
 
 .card:hover {
   box-shadow: 0 0 10px red;
-
 }
 
 @media (max-width: 600px){
-  
+  .card-grid{
+  grid-template-columns:repeat(1fr);  
+  }
+
   input{
     width:94%;
   
@@ -107,4 +107,10 @@ ol{
   .titulo{
     margin-left: 6px;
   }
+}
+
+@media screen and (max-width: 900px){
+  .card-grid{
+    grid-template-columns:repeat( 1fr 1fr)!important;  
+    }
 }
