@@ -22,8 +22,4 @@ describe('Pruebas en componente principal GifExpertApp', () => {
 
    })
    
-
-
-   
-   
 })

@@ -31,6 +31,7 @@ p {
   color:#181615;
   font-family: 'Ravie';
 }
+
 input {
   background-color: #d2e4df;
   border: 3px solid #131eb8;
@@ -39,10 +40,9 @@ input {
   font-size: 1.2rem;
   padding: 10px;
   width: 98%;
-
+  display: block;
+  margin: 0 auto;
 }
-
-
 
 input::placeholder{
   color: #181615;
@@ -52,6 +52,7 @@ input::placeholder{
 .card-grid{
   display:grid;
   grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+  grid-template-rows: 1fr;
   gap: 5px 5px;
   justify-content: center;
   margin: auto;
@@ -64,9 +65,11 @@ ol{
   padding: 0;
   
 }
+
 .card {
   display: grid;
   align-items: center;
+  height: 85%;
   background-color: #dcee9c;
   padding: 15px 0px;
   align-content: center;
